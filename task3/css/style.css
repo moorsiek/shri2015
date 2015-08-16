@@ -1,0 +1,116 @@
+@import "normalize.css";
+
+html, body {
+    height: 100%;
+}
+.player {
+    width: 520px;
+    background: #fff;
+    position: relative;
+    min-height: 400px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+.controls {
+    border-bottom: 1px solid #ccc;
+}
+.playlist {
+    padding: 2px;
+    overflow: auto;
+    height: 200px;
+}
+.tracks {
+
+}
+.tracks__track {
+    color: #000;
+    cursor: pointer;
+}
+.tracks__track:hover {
+    color: #ffc944;
+}
+.tracks__track_current {
+    color: orange;
+}
+.tracks__remove {
+    text-decoration: none;
+    color: #000;
+}
+.tracks__remove:hover {
+    color: #ffc944;
+}
+.dropzone {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    display: none;
+}
+.player_dragover .tracks {
+    border: 1px solid orange;
+}
+.controls__volume {
+    float: right;
+}
+.controls__btns {
+    padding: 4px;
+    cursor: default;
+    overflow: hidden;
+}
+.controls__btn {
+    background-image: url(../img/btns.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.controls__btn_active,
+.controls__btn:hover {
+    background-position-y: -32px;
+}
+.controls__btn_next {
+    width: 14px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+.controls__btn_pause {
+    width: 8px;
+    height: 15px;
+    background-position: -29px -5px;
+}
+.controls__btn_play {
+    width: 10px;
+    height: 15px;
+    background-position: -47px -5px;
+}
+.controls__btn_prev {
+    width: 15px;
+    height: 15px;
+    background-position: -67px -5px;
+}
+.controls__btn_stop {
+    width: 14px;
+    height: 14px;
+    background-position: -92px -5px;
+}
+.controls__volume-icon {
+    width: 11px;
+    height: 17px;
+    background-position: -116px -5px;
+    float: right;
+    margin-right: 4px;
+}
+.spectrum {
+    text-align: center;
+}
+.playlist__hint {
+    display: block;
+}
+.playlist__hint_hidden {
+    display: none;
+}
